@@ -9,7 +9,7 @@ namespace XTalk.Core.Interfaces
         Task<User> LoginWithUserNameAndPassword(string username, string password);
         Task<User> Register(User user);
         Task<User[]> GetContacts(int userID);
-        Task<User[]> AddContact(int userID, string username);
+        Task<User> AddContact(int userID, string username);
         Task<ChatExchange[]> GetChatExchanges(int userID);
         Task<Message[]> GetMessages(int chatExchangeID);
         Task<Message> SendMessage(Message message);
